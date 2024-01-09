@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- declara encodingul la la caractere -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titlul din TAB -->
+    <title>Document</title>
+    <!-- Cum afectam pe google result -->
+    <meta name="description" content="Eu apar in serch results pe google" />
+    <meta name="url" content="https://www.enovatika.com" />
+    <meta name="keywords" content="training, zmed, branza" />
+    <!-- open graph pentru social media -->
+    <meta name="og:title" content="titlu ce apare la share pe social media" />
+    <meta
+      name="og:description"
+      content="descriere pe cardul din share pe social media"
+    />
+    <meta name="og:image" content="url absolut catre o imagine" />
+
+    <!-- type:website, article OPTIONAL -->
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content="URL absolut al pagini" />
+    <meta name="" content="" />
+    <meta name="" content="" />
+
+    <!-- favicon = imaginea din tabul de la brower, in stanga title -->
+    <link rel="apple-touch-icon" sizes="180x180" href="Public/" />
+    <link rel="icon" type="image/png" sizes="32x32" href="Public/" />
+    <link rel="icon" type="image/png" sizes="16x16" href="Public/" />
+    <link rel="manifest" href="Public/site.webmanifest" />
+    <!-- link - legatura cu un alt fisier, nu directia -->
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+      function changeInput() {
+        alert("A mers!");
+      }
+
+      function handleBlur(el) {
+        el.style.border = "1px solid grey";
+      }
+    </script>
+  </head>
+  <body>
+    <!-- <img src="images/pexels.jpg" alt="o poza cu o vaca" /> -->
+
+    <h1>Heading 1</h1>
+    <!-- Heading 1 este unic in pagina individuala(nu pe site), cel mai important titlu,cand deschide ecranul principal inainte de scroll -->
+    <h2>Heading 2</h2>
+    <!-- Reprezinta sectiuni diferite din site -->
+    <h3>Heading 3</h3>
+    <!-- Reprezinta o grupare din o sectiune, h4,h5,h6 este folosit doar in mod expres -->
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <!-- Block ocupa toata linia -->
+    <p>Paragraf</p>
+    <!-- Inline ocupa doar marimea continutului -->
+    <span>Span</span>
+    <!-- span e pentru stilizarea textului in css, bold, italic, etc, nu folosim b sau strong -->
+    <a href="form.html">Click me</a>
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <!-- link ancora -->
+    <!-- Daca este un link spre pagina mea, nu pun blank, daca apelez un link extern pun black pentru un nou tab -->
+    <!-- No target daca-i pe same site -->
+
+    <!-- de cautat si exersat toate input types -->
+    <form action="form.html" method="post">
+      <input type="email" name="user" required onchange="changeInput()" />
+      <input
+        type="password"
+        name="password"
+        required=""
+        onkeyup="changeInput()"
+      />
+      <input type="text" onkeydown="changeInput()" />
+      <input type="submit" />
+      <input type="text" placeholder="dd/mm/yyyy" disabled />
+      <input
+        type="text"
+        onfocus="handleFocus(this)"
+        onblur="handleBlur(this)"
+      />
+      <!-- onfocus e triggerd cand secetez un input, onblur cand plec de pe input -->
+      <!-- <input type="date" /> nu folosim fiindca folosim librari-->
+      <!-- name este numele imputului, input este valoarea -->
+      <!-- get pentru search history -->
+      <!--  -->
+    </form>
+    <form action="action"></form>
+  </body>
+</html>
+
+<!-- tema: cautam surse pentru documentatie: mdn, w3school -->

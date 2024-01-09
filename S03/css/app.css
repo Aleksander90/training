@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+  html {
+    font-size: 10px;
+    font-family: "Open Sans", sans-serif;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  ul,
+  ol {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  /*asa se scot numerele si bulletpoints*/
+}
+
+.flex {
+  display: flex;
+  border: 1px solid red;
+
+}
+.child {
+  border: 1px solid green;
+  padding: 0.8rem 1.6rem;
+}
+.child:first-of-type {
+  height: 10rem;
+}
+/*intr-o clasa parinte, copilul cu cea mai mare valoare dicteaza inaltimea tuturor copiilor din flex*/
+
+.child:last-of-type {
+  height: 20rem;
+}
+
+/*start grid*/
+.container {
+  width: 100%;
+  max-width: 120rem;
+  margin: auto;
+  padding: 0 1.6rem;
+  display: flex;
+  flex-direction: column;
+  /*pentru centrarea unui block folosim auto*/
+}
+/*row reprezinta un row de continut*/
+.row {
+  margin-left: -1.6rem;
+  margin-right: -1.6rem;
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  padding: 0 1.6rem;
+}
+.col-1 {
+  width: calc(1 * 8.3333%);
+  padding: 0 1.6rem;
+}
+.col-2 {
+  width: calc(2 * 8.3333%);
+  padding: 0 1.6rem;
+}
+.col-3 {
+  width: calc(3 * 8.3333%);
+  padding: 0 1.6rem;
+}
+.col-4 {
+  width: calc(4 * 8.3333%);
+  padding: 0 1.6rem;
+}
+.col-5 {
+  width: calc(5 * 8.3333%);
+  padding: 0 1.6rem;
+}
+.col-6 {
+  width: calc(6 * 8.3333%);
+  padding: 0 1.6rem;
+}
+.col-7 {
+  width: calc(7 * 8.3333%);
+  padding: 0 1.6rem;
+}
+.col-8 {
+  width: calc(8 * 8.3333%);
+  padding: 0 1.6rem;
+}
+.col-9 {
+  width: calc(9 * 8.3333%);
+  padding: 0 1.6rem;
+}
+.col-10 {
+  width: calc(10 * 8.3333%);
+  padding: 0 1.6rem;
+}
+.col-11 {
+  width: calc(11 * 8.3333%);
+  padding: 0 1.6rem;
+}
+.col-12 {
+  width: calc(12 * 8.3333%);
+  padding: 0 1.6rem;
+}
+
+/*END GRID */
+
+/*START HEADER*/
+
+.header {
+  background-color: #2b2922;
+  color: #fafafa;
+  padding: 0.8rem 0;
+}
+.header li a {
+  color: #fafafa;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  display: block;
+  padding: 0.4rem 0.8rem;
+  text-transform: uppercase;
+}
+.header ul {
+    display: flex;
+}
+/*END HEADER*/
+
+/*START HELPERS*/
+.space-between {
+  justify-content: space-between;
+}
+.space-between > * {
+  flex: unset;
+}
+.align-center {
+    align-items: center;
+}
+/*END HELPERS*/
+
+
+/*Trebuie sa reproduc un site*/
